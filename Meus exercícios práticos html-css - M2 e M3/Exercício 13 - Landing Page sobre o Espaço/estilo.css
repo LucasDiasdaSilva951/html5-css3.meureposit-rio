@@ -61,14 +61,14 @@ header > nav {
     border: 5px solid var(--cor5);
     box-shadow: 1.6px 1.6px black;
 }
-header > nav > p {
+header > nav > ul > li {
     display: inline-block;
     padding: 6.5px;
     color: var(--cor4);
     font: bolder 16px var(--fontetitulo);
     text-shadow: 1px 1px black;
 }
-header > nav > p:hover {
+header > nav > li:hover {
     background-color: var(--cor5);
     border-bottom: 2px solid var(--cor3);
     padding: 6.5px;
