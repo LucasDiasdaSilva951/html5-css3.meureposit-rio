@@ -52,26 +52,31 @@ header > div > p::after {
     padding: 9px;
 }
 header > nav {
-    text-align: center;
     background-image: url('imagens/espaçoimg2.jpg');
     background-attachment: fixed;
     background-size: cover;  
-    height: 65px;
+    height: 50px;
     width: auto;
     border: 5px solid var(--cor5);
     box-shadow: 1.6px 1.6px black;
 }
-header > nav > ul > li {
-    display: inline-block;
-    padding: 6.5px;
-    color: var(--cor4);
-    font: bolder 16px var(--fontetitulo);
-    text-shadow: 1px 1px black;
+header > nav > ul {
+    list-style-type: none;
 }
-header > nav > li:hover {
-    background-color: var(--cor5);
+header > nav > ul > li {
+    display: inline;
+}
+header > nav > ul > li > a {
+    padding-inline: 6px;
+    color: var(--cor4);
+    font: bolder 13.5px var(--fontepadrão);
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+}
+header > nav > ul > li > a:hover {
+    padding: 6px;
+    background-color: var(--cor3);
     border-bottom: 2px solid var(--cor3);
-    padding: 6.5px;
     text-decoration: underline;
 }
 main {
