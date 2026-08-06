@@ -130,7 +130,7 @@ footer {
     padding: 10px;
     text-align: center;
     margin: auto;
-    box-shadow: 2x 2px black;
+    box-shadow: 2px 2px black;
     border: 10px solid var(--cor5);
 }
 footer > div > p {
