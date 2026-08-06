@@ -11,14 +11,15 @@
     --cor1: #FFFFFF;
     --cor2: #9448BA;
     --cor3: #34354d;
-    --cor4: #bbbabe;
+    --cor4: #e7ceff;
     --cor5: #18302f;
+    --cor6: #00008b;
 
     --fontetitulo: 'LeagueSpartan';
     --fontepadrão: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 body {
-    background-image: url('imagens/vialacteaimg.jpg');
+    background-image: url('imagens/espaçosideral.jpg');
     background-position: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,7 +31,9 @@ header > div {
     background-attachment: fixed;
     background-size: cover;
     height: 100%;
-    width: 100%;
+    width: auto;
+    border: 5px solid var(--cor6);
+    box-shadow: 1.6px 1.6px black;
 }
 header > div > p {
     display: inline-block;
@@ -40,24 +43,36 @@ header > div > p {
     font: bolder 4em var(--fontetitulo);
     text-shadow: 1.5px 1.5px black;
 }
+header > div > p::before {
+    content: '⚝';
+    padding: 9px;
+}
+header > div > p::after {
+    content: '⚝';
+    padding: 9px;
+}
 header > nav {
     text-align: center;
     background-image: url('imagens/espaçoimg2.jpg');
     background-attachment: fixed;
     background-size: cover;  
-    height: 55px;
+    height: 65px;
+    width: auto;
+    border: 5px solid var(--cor5);
+    box-shadow: 1.6px 1.6px black;
 }
 header > nav > p {
     display: inline-block;
-    padding: 6px;
+    padding: 6.5px;
     color: var(--cor4);
-    font: bolder 0.85em var(--fontepadrão);
-    text-shadow: 1px 1.5px black;
+    font: bolder 16px var(--fontetitulo);
+    text-shadow: 1px 1px black;
 }
 header > nav > p:hover {
     background-color: var(--cor5);
     border-bottom: 2px solid var(--cor3);
-    padding: 6px;
+    padding: 6.5px;
+    text-decoration: underline;
 }
 main {
     text-align: center;
@@ -69,7 +84,84 @@ main > div > h1 {
     text-shadow: 1.8px 1.8px black;
 }
 main > div > h3 {
-    font: normal 1.3em var(--fontetitulo);
+    font: normal 1.3em var(--fontepadrão);
     color: var(--cor2);
     text-shadow: 2.1px 2.1px black;
+}
+main > div > p {
+    font: normal 1.025em var(--fontepadrão);
+    color: var(--cor1);
+    text-shadow: 2.1px 2.1px black;
+}
+main > #botão {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.432);
+    padding: 7px;
+    font: bolder 1.3em var(--fontetitulo);
+    margin: auto;
+    width: 300px;
+    border: 5px solid #c99ac9;
+    outline: 3px solid var(--cor2);
+}
+main > #botão > p {
+    text-align: center;
+    color: var(--cor2);
+    text-shadow: 1.25px 1.25px black;
+}
+main > #botão > p::before {
+    content: '🚀 ';
+}
+main > #botão:hover {
+    background-color: rgba(44, 41, 41, 0.781);
+}
+.espaçamento {
+    padding: 24px;
+}
+footer {
+    background-color: var(--cor3);
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 2x 2px black;
+    border: 10px solid var(--cor5);
+}
+footer > div > p {
+    padding-inline: 8px;
+    font: 18px var(--fontepadrão);
+    display: inline;    
+    text-shadow: 0.5px 0.5px black;
+}
+footer > div > p.textorodapé > abbr { 
+    text-decoration: none;
+}
+footer > div > p.textorodapé:hover {
+    background-color: rgba(0, 0, 0, 0.527);
+    text-decoration: underline;
+}
+footer > div > p.textorodapé {
+    color: var(--cor1);
+}
+footer > div > p.barra {
+    color: var(--cor4);
+}
+footer > div > p#textofinal {
+    color: var(--cor1);
+}
+footer > div > div#espaçodalinha > p#barraestrelada {
+    color: var(--cor4);
+}
+footer > div > br.pulo {
+    margin: auto;
+}
+footer > div > #linha {
+    margin: auto;
+    display: block;
+    border-radius: 50px;
+    border: 5px solid var(--cor2);
+}
+#espaçodalinha {
+    padding: 6px;
 }
