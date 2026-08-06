@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url(fontes/LeagueSpartan-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(fontes/Montserrat-VariableFont_wght.ttf);
+}
+:root {
+    --cor1: #FFFFFF;
+    --cor2: #9448BA;
+    --cor3: #34354d;
+    --cor4: #bbbabe;
+    --cor5: #18302f;
+
+    --fontetitulo: 'LeagueSpartan';
+    --fontepadrão: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url('imagens/vialacteaimg.jpg');
+    background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header > div {
+    text-align: center;
+    background-image: url('imagens/espaçoimg1.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+header > div > p {
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 2.5em;
+    color: var(--cor1);
+    font: bolder 4em var(--fontetitulo);
+    text-shadow: 1.5px 1.5px black;
+}
+header > nav {
+    text-align: center;
+    background-image: url('imagens/espaçoimg2.jpg');
+    background-attachment: fixed;
+    background-size: cover;  
+    height: 55px;
+}
+header > nav > p {
+    display: inline-block;
+    padding: 6px;
+    color: var(--cor4);
+    font: bolder 0.85em var(--fontepadrão);
+    text-shadow: 1px 1.5px black;
+}
+header > nav > p:hover {
+    background-color: var(--cor5);
+    border-bottom: 2px solid var(--cor3);
+    padding: 6px;
+}
+main {
+    text-align: center;
+}
+main > div > h1 {
+    padding: 2px;
+    font: bolder 4.2em var(--fontetitulo);
+    color: var(--cor1);
+    text-shadow: 1.8px 1.8px black;
+}
+main > div > h3 {
+    font: normal 1.3em var(--fontetitulo);
+    color: var(--cor2);
+    text-shadow: 2.1px 2.1px black;
+}
